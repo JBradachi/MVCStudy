@@ -21,7 +21,7 @@ public class frmPessoaVIEW extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         txtNome = new javax.swing.JTextField();
-        btnOK = new javax.swing.JButton();
+        btnEntrar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         txtSenha = new javax.swing.JTextField();
 
@@ -35,10 +35,10 @@ public class frmPessoaVIEW extends javax.swing.JFrame {
             }
         });
 
-        btnOK.setText("OK");
-        btnOK.addActionListener(new java.awt.event.ActionListener() {
+        btnEntrar.setText("Entrar");
+        btnEntrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOKActionPerformed(evt);
+                btnEntrarActionPerformed(evt);
             }
         });
 
@@ -57,7 +57,7 @@ public class frmPessoaVIEW extends javax.swing.JFrame {
                     .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(39, 39, 39)
-                        .addComponent(btnOK)))
+                        .addComponent(btnEntrar)))
                 .addContainerGap(126, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -72,7 +72,7 @@ public class frmPessoaVIEW extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(41, 41, 41)
-                .addComponent(btnOK)
+                .addComponent(btnEntrar)
                 .addContainerGap(54, Short.MAX_VALUE))
         );
 
@@ -83,7 +83,7 @@ public class frmPessoaVIEW extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNomeActionPerformed
 
-    private void btnOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOKActionPerformed
+    private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
         String nome = txtNome.getText();
         String senha = txtSenha.getText();
         
@@ -92,7 +92,7 @@ public class frmPessoaVIEW extends javax.swing.JFrame {
         PessoaDAO objPessoaDAO = new PessoaDAO();
         objPessoaDAO.imprimirPessoa(objPessoaDTO);
         
-    }//GEN-LAST:event_btnOKActionPerformed
+    }//GEN-LAST:event_btnEntrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -130,7 +130,7 @@ public class frmPessoaVIEW extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnOK;
+    private javax.swing.JButton btnEntrar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField txtNome;
